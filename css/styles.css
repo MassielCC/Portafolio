@@ -487,7 +487,7 @@ progress {
 }
 
 .lead {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 300;
 }
 
@@ -967,6 +967,7 @@ progress {
   .col-sm-10 {
     flex: 0 0 auto;
     width: 83.33333333%;
+    margin: auto;
   }
   .col-sm-11 {
     flex: 0 0 auto;
@@ -1128,6 +1129,7 @@ progress {
   .col-md-8 {
     flex: 0 0 auto;
     width: 66.66666667%;
+    margin: auto;
   }
   .col-md-9 {
     flex: 0 0 auto;
@@ -11577,23 +11579,45 @@ html {
   width: 3rem;
   font-size: 1.5rem;
 }
-
+.welcome span{
+  position: relative;
+  font-size: 5vw;
+  color:transparent;
+  -webkit-text-stroke: 0.2vw  #1e30f3;
+}
+.welcome span::before{
+  content: "Bienvenidos";
+  position: absolute;
+  top:1;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+  background-clip:text;
+  -webkit-text-stroke: 0vw #1e30f3;
+  border-right: 2px solid #1e30f3;
+  overflow: hidden;
+  animation: animate 6s ease-in infinite;
+}
+@keyframes animate{
+  0%, 10%, 100%{
+    width: 0;
+  }
+  70%, 90%{
+    width: 100%;
+  }
+}
+.name{
+  font-family: "Damion";
+  font-size: 1.7rem;
+}
 .profile {
   position: relative;
-  height: 75vw;
-  width: 75vw;
-  border-radius: 5vw;
-  margin-top: 5vw;
-  max-height: 40rem;
-  max-width: 40rem;
-}
-.profile .profile-img {
-  height: 80vw;
-  max-height: 45rem;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  height:auto;
+  width: 90%;
+  margin-top: 3vw;
 }
 .profile .dots-1 {
   position: absolute;
@@ -11625,8 +11649,8 @@ html {
 .profile .dots-4 {
   position: absolute;
   width: 3vw;
-  left: -4vw;
-  bottom: 4vw;
+  left: -3vw;
+  top: 2vw;
 }
 .profile .dots-4 svg {
   fill: #1e30f3;
@@ -11634,11 +11658,7 @@ html {
 
 @media (min-width: 576px) {
   .profile {
-    height: 60vw;
     width: 60vw;
-  }
-  .profile .profile-img {
-    height: 65vw;
   }
   .profile .dots-1 {
     width: 3vw;
@@ -11659,15 +11679,11 @@ html {
 }
 @media (min-width: 768px) {
   .profile {
-    height: 50vw;
-    width: 50vw;
-  }
-  .profile .profile-img {
-    height: 55vw;
+    width: 60vw;
   }
   .profile .dots-1 {
-    width: 3vw;
-    right: 1.5vw;
+    width: 2vw;
+    right: 0.5vw;
   }
   .profile .dots-2 {
     width: 3vw;
@@ -11684,11 +11700,7 @@ html {
 }
 @media (min-width: 992px) {
   .profile {
-    height: 40vw;
     width: 40vw;
-  }
-  .profile .profile-img {
-    height: 45vw;
   }
   .profile .dots-1 {
     width: 1.5vw;
@@ -11709,11 +11721,7 @@ html {
 }
 @media (min-width: 1200px) {
   .profile {
-    height: 35vw;
     width: 35vw;
-  }
-  .profile .profile-img {
-    height: 40vw;
   }
   .profile .dots-1 {
     width: 1.5vw;
@@ -11731,4 +11739,101 @@ html {
     width: 1.5vw;
     left: -2vw;
   }
+}
+.containerSlide {
+  width: 100%;
+  height: 100%;
+  max-width: 600px;
+  max-height: 600px;
+  display: flex;
+  transform-style: preserve-3d;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cards {
+  position: relative;
+  height: 560px;
+  width: 400px;
+  margin-bottom: 20px;
+  perspective: 400px;
+  transform-style: preserve-3d;
+}
+
+.cards label {
+  position: absolute;
+  width: 420px;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  cursor: pointer;
+  transition: transform 0.55s ease;
+}
+
+.cards .proj {
+  position: relative;
+  height: 100%;
+  border-radius: 10px;
+  padding: 10px 25px;
+}
+.cards .proj1 {
+  background-image: url("elemental.png");
+  background-size: cover;
+}
+.cards .proj2 {
+  background-image: url("knowDo.png");
+  background-size: cover;
+}
+.cards .proj3 {
+  background-image: url("PaginaIBM.png");
+  background-size: cover;
+}
+.proj .button{
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+.proj .button a{
+  background-color: rgb(21, 10, 118);
+  color: white;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 2vw;
+  font-weight: bold;
+  box-shadow: 5px 5px 2px #48529944;
+}
+.proj .button a i {
+  margin: 10px 4px;
+}
+.proj .button a:hover{
+  background-color: white;
+  color: rgb(21, 10, 118);
+  transition: all 30ms ease;
+}
+#s2:checked~.cards #slide4,
+#s4:checked~.cards #slide3,
+#s3:checked~.cards #slide2{
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
+  transform: translate3d(-30%, 0, -60px);
+  --current-color1: #ECEAED;
+  --current-color2: #404457;
+}
+
+#s2:checked~.cards #slide2,
+#s3:checked~.cards #slide3,
+#s4:checked~.cards #slide4{
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 50%);
+  transform: translate3d(0, 0, 0);
+  --current-color1: #fad00c;
+  --current-color2: #ECEAED;
+}
+
+#s2:checked~.cards #slide3,
+#s3:checked~.cards #slide4,
+#s4:checked~.cards #slide2{
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
+  transform: translate3d(30%, 0, -30px);
+  --current-color1: #ECEAED;
+  --current-color2: #404457;
 }

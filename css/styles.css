@@ -58,7 +58,7 @@
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
-  --bs-body-font-size: 1rem;
+  --bs-body-font-size: 0.95rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
@@ -1943,6 +1943,12 @@ progress {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
+  .card img {
+        width: 80%; 
+        max-height: 200px;
+        margin: 0px auto 15px auto; /* centra la imagen */
+        object-fit: cover; /* mantiene proporciones, no se deforma */
+    }
 }
 @media (max-width: 991.98px) {
   .table-responsive-lg {
@@ -11740,100 +11746,22 @@ html {
     left: -2vw;
   }
 }
-.containerSlide {
-  width: 100%;
-  height: 100%;
-  max-width: 600px;
-  max-height: 600px;
-  display: flex;
-  transform-style: preserve-3d;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+
+.tag-tech {
+    background-color: #f1f1f1;
+    color: #1e30f3;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    border: 1px solid #e4e4e4; /* muy suave */
 }
-.cards {
-  position: relative;
-  height: 560px;
-  width: 400px;
-  margin-bottom: 20px;
-  perspective: 400px;
-  transform-style: preserve-3d;
+.icon-deploy {
+    font-size: 0.8rem;
+    color: #6c757d; 
+    margin-left: 0.5rem; 
 }
 
-.cards label {
-  position: absolute;
-  width: 420px;
-  height: 100%;
-  left: 0;
-  right: 0;
-  margin: auto;
-  cursor: pointer;
-  transition: transform 0.55s ease;
-}
-
-.cards .proj {
-  position: relative;
-  height: 100%;
-  border-radius: 10px;
-  padding: 10px 25px;
-}
-.cards .proj1 {
-  background-image: url("elemental.png");
-  background-size: cover;
-}
-.cards .proj2 {
-  background-image: url("knowDo.png");
-  background-size: cover;
-}
-.cards .proj3 {
-  background-image: url("PaginaIBM.png");
-  background-size: cover;
-}
-.proj .button{
-  position: absolute;
-  bottom: 10%;
-  right: 10%;
-}
-.proj .button a{
-  background-color: rgb(21, 10, 118);
-  color: white;
-  border-radius: 50%;
-  text-decoration: none;
-  font-size: 2vw;
-  font-weight: bold;
-  box-shadow: 5px 5px 2px #48529944;
-}
-.proj .button a i {
-  margin: 10px 4px;
-}
-.proj .button a:hover{
-  background-color: white;
-  color: rgb(21, 10, 118);
-  transition: all 30ms ease;
-}
-#s2:checked~.cards #slide4,
-#s4:checked~.cards #slide3,
-#s3:checked~.cards #slide2{
-  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
-  transform: translate3d(-30%, 0, -60px);
-  --current-color1: #ECEAED;
-  --current-color2: #404457;
-}
-
-#s2:checked~.cards #slide2,
-#s3:checked~.cards #slide3,
-#s4:checked~.cards #slide4{
-  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 50%);
-  transform: translate3d(0, 0, 0);
-  --current-color1: #fad00c;
-  --current-color2: #ECEAED;
-}
-
-#s2:checked~.cards #slide3,
-#s3:checked~.cards #slide4,
-#s4:checked~.cards #slide2{
-  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
-  transform: translate3d(30%, 0, -30px);
-  --current-color1: #ECEAED;
-  --current-color2: #404457;
-}

@@ -29,17 +29,17 @@
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                            <li class="nav-item"><a class="nav-link" href="resume.html">Curriculum</a></li>
-                            <li class="nav-item"><a class="nav-link" href="projects.html">Proyectos</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contactos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#about-me">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">Contactos</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
             <!-- Header-->
             <header class="py-3">
-                <div class="container px-2 pb-5">
+                <div class="container px-2 pb-5" id="about-me">
                     <div class="row gx-3 align-items-center" >
                         <div class="col-xxl-10 col-sm-10">
                             <div class="d-flex justify-content-center mt-3 mt-xxl-0">
@@ -50,17 +50,17 @@
                                            en la UPCH. Mi primer proyecto fue una página web y desde entonces he seguido aprendiendo. 
                                            Actualmente estoy interesada en las ramas de Desarrollo web y Bioinformática.
                                          </p>
-                                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
-                                            <a class="btn btn-primary btn-lg px-4 py-2 me-sm-3 fs-6 fw-bolder" href="resume.html">Curriculum</a>
+                                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">                                            
+                                            <a class="btn btn-primary btn-lg px-4 py-2 me-sm-3 fs-6 fw-bolder" target="_blank" href="assets/CV_Marelly_Colla.pdf">Descargar CV</a>
                                             <a class="btn btn-outline-dark btn-lg px-4 py-2 fs-6 fw-bolder" href="projects.html">Proyectos</a>
                                         </div>
                                         <p class="text-muted">En esta sección podras observar a algunos de mis proyectos, aquí también les facilito mi 
                                             información de contacto y mis redes sociales.
                                         </p>
                                         <div class="d-flex justify-content-center fs-2 gap-4">
-                                            <a class="text-gradient" href="https://www.linkedin.com/in/marelly-massiel-colla-cervantes-565b881b7/"><i class="bi bi-linkedin"></i></a>
+                                            <a class="text-gradient" href="https://www.linkedin.com/in/marelly-massiel-colla-cervantes/"><i class="bi bi-linkedin"></i></a>
                                             <a class="text-gradient" href="https://github.com/MassielCC"><p><i class="bi bi-github"></i><sup class="text-gradient">1</sup></p></a>
-                                            <a class="text-gradient" href="https://github.com/IBM2020"><p><i class="bi bi-github"></i><sup class="text-gradient">2</sup></p></a>
+                                            <a class="text-gradient" href="https://github.com/marelly-colla"><p><i class="bi bi-github"></i><sup class="text-gradient">2</sup></p></a>
                                         </div>
                                     </div>
                                     <div class="dots-4">
@@ -95,73 +95,529 @@
                     </div>
                 </div>
             </header>
-            <!-- About Section-->
-            <section class="bg-light py-5">
+            <!-- Projects Section-->
+            <section class="bg-light py-5" id="projects">
                 <div class="container px-5">
                     <div class="row gx-5 justify-content-center">
                         <div class="text-center mb-5">
-                            <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Mis proyectos</span></h1>
+                            <h3 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Mis proyectos</span></h3>
                             <div class="col-md-8 py-3">
                                 <p>En esta sección se encuentran algunos de mis proyectos, cuyos códigos fuente se encuentran publicados en mi 
                                     repositorio de Github. Cada proyecto tiene una temática diferente puesto que pertenecen a trabajos
                                 académicos y colaboraciones con equipos externos.</p>
                             </div>
                         </div>
-                        <div class="col-xxl-5 col-md-8 col-sm-10">
-                            <div class="slider-pack">
-                                <div class="containerSlide">
-                                  <input type="radio" name="slider" class="d-none" id="s2" checked>
-                                  <input type="radio" name="slider" class="d-none" id="s3">
-                                  <input type="radio" name="slider" class="d-none" id="s4">
-                              
-                                  <div class="cards">
-                                    <label for="s2" id="slide2">
-                                      <div class="proj proj1">
-                                        <div class="button">
-                                          <a href="https://massielcc.github.io/Elemental-pre/" target="_blank"><i class="bi bi-plus-circle"></i></a>
+                        <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-11 col-xl-9 col-xxl-8">
+                            <!-- Project Card 1-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center flex-column flex-md-row">
+
+                                        <div class="p-5">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <a href="https://github.com/EdwinJaraOFC/trouvels360-backend-laravel" target="_blank" aria-label="GitHub" class="text-dark fs-4">
+                                                    <i class="bi bi-github"></i>
+                                                </a>
+                                            </div>
+
+                                            <h4 class="fw-bolder mb-3">
+                                                Plataforma Web de Reservas de Hoteles y Tours 
+                                                <a href="https://trouvels360-fzfvgcgrd-shinyaxds-projects.vercel.app/hoteles" target="_blank"><i class="bi bi-box-arrow-up-right icon-deploy"></i></a>
+                                            </h4>
+                                            
+                                            <p>
+                                                Plataforma con módulos de usuarios, proveedores, reseñas
+                                                y planificación de viajes. Backend implementado en Laravel, APIs REST, autenticación
+                                                y despliegue completo en Render.
+                                            </p>
+
+                                            <div class="d-flex gap-2 flex-wrap mt-3">
+                                                <span class="tag-tech">Angular</span>
+                                                <span class="tag-tech">Laravel</span>
+                                                <span class="tag-tech">Python</span>
+                                                <span class="tag-tech">Docker</span>
+                                                <span class="tag-tech">Render</span>
+                                                <span class="tag-tech">API REST</span>
+                                                <span class="tag-tech">Git/GitHub</span>
+                                            </div>
                                         </div>
-                                      </div>
-                                    </label>
-                              
-                                    <label for="s3" id="slide3">
-                                      <div class="proj proj2">
-                                        <div class="button">
-                                          <a href="https://massielcc.github.io/Know-Do/" target="_blank"><i class="bi bi-plus-circle"></i></a>
-                                        </div>
-                                      </div>
-                                    </label>
-                              
-                                    <label for="s4" id="slide4">
-                                      <div class="proj proj3">
-                                        <div class="button">
-                                          <a href="https://ibm2020.github.io/ProyectoIBM/" target="_blank"><i class="bi bi-plus-circle"></i></a>
-                                        </div>
-                                      </div>
-                                    </label>
-                                  </div>
-                              
+
+                                        <img class="img-fluid" src="assets/Tours.png" alt="Plataforma de reservas" width="40%"/>
+                                    </div>
                                 </div>
-                              </div>
+                            </div>
+
+                            <!-- Project Card 2-->
+                             <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center flex-column flex-md-row">
+                                        <div class="p-5">
+                                            <!-- Enlace si hay repositorio -->
+                                            <a href="https://github.com/marelly-colla/AGMAC-App"
+                                            class="text-dark fs-4"
+                                            target="_blank"
+                                            aria-label="Repositorio en GitHub">
+                                                <i class="bi bi-github"></i>
+                                            </a>
+                                            <h4 class="fw-bolder">AGMAC – App móvil de control de medicación</h4>
+                                            
+                                            <p>
+                                                Aplicación móvil desarrollada en Kotlin con Jetpack Compose para gestionar horarios 
+                                                de medicación en adultos mayores. Incluye lectura, edición y filtrado de datos desde archivos JSON, 
+                                                notificaciones programadas y flujo completo de registro de medicamentos.
+                                            </p>
+
+                                            <!-- Tech Tags -->
+                                            <div class="d-flex gap-2 flex-wrap mt-2">
+                                                <span class="tag-tech">Kotlin</span>
+                                                <span class="tag-tech">Jetpack Compose</span>
+                                                <span class="tag-tech">JSON</span>
+                                                <span class="tag-tech">Android</span>
+                                            </div>
+                                        </div>
+
+                                        <img class="img-fluid" src="assets/Agmac.png" alt="AGMAC app" width="40%"/>
+                                    </div>
+                                </div>
+                            </div>                         
+                            <!-- Project Card 3-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center flex-column flex-md-row">
+
+                                        <div class="p-5">
+                                            <!-- Enlace si hay repositorio -->
+                                            <a href="https://github.com/MassielCC/ScrapeFlow"
+                                            class="text-dark fs-4"
+                                            target="_blank"
+                                            aria-label="Repositorio en GitHub">
+                                                <i class="bi bi-github"></i>
+                                            </a>
+                                            <h4 class="fw-bolder mb-3">ScrapeFlow — Web Scraping Paralelizado</h4>
+
+                                            <p>
+                                                Herramienta paralelizada para comparar productos en múltiples tiendas online. 
+                                                Se implementó scrapers optimizados en Python, manejo de lazy loading, detección 
+                                                de estructuras HTML heterogéneas y estrategias anti-bloqueo para mejorar el rendimiento.
+                                            </p>
+
+                                            <div class="d-flex gap-2 flex-wrap mt-3">
+                                                <span class="tag-tech">Python</span>
+                                                <span class="tag-tech">Selenium</span>
+                                                <span class="tag-tech">BeautifulSoup</span>
+                                                <span class="tag-tech">C</span>
+                                                <span class="tag-tech">Automatización</span>
+                                                <span class="tag-tech">Optimización</span>
+                                                <span class="tag-tech">Scraping</span>
+                                            </div>
+                                        </div>
+
+                                        <img class="img-fluid" src="assets/scraper.png" alt="ScrapeFlow" width="40%"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Project Card 4-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center flex-column flex-md-row">
+
+                                        <div class="p-5">
+                                            <a href="https://github.com/MassielCC/NovaInfor"
+                                            class="text-dark fs-4"
+                                            target="_blank"
+                                            aria-label="Repositorio en GitHub">
+                                                <i class="bi bi-github"></i>
+                                            </a>
+                                            <h3 class="fw-bolder mb-3">NovaInfor — Chatbot de Orientación Profesional</h3>
+
+                                            <p>
+                                                Chatbot desplegado en Telegram para guiar a estudiantes de Ingeniería Informática 
+                                                en exploración de especialidades y oportunidades laborales. Se integro la API de OpenAI, 
+                                                datos estructurados y despliegue en Google Cloud con disponibilidad continua.
+                                            </p>
+
+                                            <div class="d-flex gap-2 flex-wrap mt-3">
+                                                <span class="tag-tech">Python</span>
+                                                <span class="tag-tech">Telegram Bot API</span>
+                                                <span class="tag-tech">OpenAI API</span>
+                                                <span class="tag-tech">Google Cloud VM</span>
+                                                <span class="tag-tech">Tmux</span>
+                                                <span class="tag-tech">Data Cleaning</span>
+                                            </div>
+                                        </div>
+
+                                        <img class="img-fluid" src="assets/novaInfor.png" alt="NovaInfor" width="40%"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project Card 5-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center flex-column flex-md-row">
+                                        <div class="p-5">
+                                            <h3 class="fw-bolder">Página Web + PHP + SQL</h3>
+                                            <p>Este proyecto consiste en una página web enlazada a una base de datos local a traves de PHP. Desde la página
+                                                se puede visualizar, editar y eliminar la información de la base de datos. 
+                                            </p>
+                                            <div class="d-flex gap-2 flex-wrap mt-3">
+                                                <span class="tag-tech">PHP</span>
+                                                <span class="tag-tech">SQL</span>
+                                                <span class="tag-tech">HTML/CSS</span>
+                                            </div>
+                                        </div>
+                                        <img class="img-fluid" src="assets/WebYPHP.png" alt="..."  width="40%"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Project Card 6-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center flex-column flex-md-row">
+                                        <div class="p-5">
+                                            <a href="https://github.com/MassielCC/Proyecto_POO_Flask"
+                                            class="text-dark fs-4"
+                                            target="_blank"
+                                            aria-label="Repositorio en GitHub">
+                                                <i class="bi bi-github"></i>
+                                            </a>
+
+                                            <h3 class="fw-bolder">Web con Flask</h3>
+                                            <p>En este proyecto se utilizo el framework Flask para crear una página web
+                                                de un restaurante. Esta cuenta con función de Login, Inicio de Sesión y el uso de formularios.
+                                                La página muestra una diferente estructura para el dueño y para los consumidores.
+                                            </p>
+                                            <div class="d-flex gap-2 flex-wrap mt-3">
+                                                <span class="tag-tech">Python</span>
+                                                <span class="tag-tech">Flask</span>
+                                                <span class="tag-tech">HTML/CSS</span>
+                                                <span class="tag-tech">Javascript</span>
+                                            </div>
+                                        </div>
+                                        <img class="img-fluid" src="assets/Flask.png" alt="..." width="40%"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Project Card 6-->
+                            
+
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Sección Tecnologías y Certificados -->
+            <section id="tech-certs" class="py-5">
+                <div class="container px-5">
+                    <!-- Certificados Oficiales -->
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-10"> 
+                            <h3 class="fw-bolder text-center mb-3"><span class="text-gradient d-inline">Certificados oficiales</span></h3>
+
+                            <div class="row row-cols-1 row-cols-md-2 g-4">
+                                <!-- Certificados oficiales 1 -->
+                                <div class="col">
+                                    <div class="card shadow-sm rounded-4 p-3 h-100 text-center">
+                                        <i class="bi bi-award-fill fs-1 text-secondary mb-2"></i>
+                                        <h5 class="fw-bold">Professional Scrum Master</h5>
+                                        <button class="btn btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#pdfModal" data-pdf="assets\Certificados\Scrum_Master.pdf">
+                                            <i class="bi bi-eye-fill"></i> Ver certificado
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="card shadow-sm rounded-4 p-3 h-100 text-center">
+                                        <i class="bi bi-award-fill fs-1 text-secondary mb-2"></i>
+                                        <h5 class="fw-bold">Scrum Foundation Professional Certification SFPC</h5>
+                                        <button class="btn btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#pdfModal" data-pdf="assets\Certificados\Scrum.pdf">
+                                            <i class="bi bi-eye-fill"></i> Ver certificado
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="card shadow-sm rounded-4 p-3 h-100 text-center">
+                                        <i class="bi bi-cloud-fill fs-1 text-secondary mb-2"></i>
+                                        <h5 class="fw-bold">AWS Academy Graduate - AWS Academy Introduction to Cloud Semester 1 & 2</h5>
+                                        <button class="btn btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#pdfModal" data-pdf="assets\Certificados\Introduction_to_Cloud_Semester_2.pdf">
+                                            <i class="bi bi-eye-fill"></i> Ver certificado
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="card shadow-sm rounded-4 p-3 h-100 text-center">
+                                        <i class="bi bi-cloud-fill fs-1 text-secondary mb-2"></i>
+                                        <h5 class="fw-bold">AWS Academy Graduate - Data Engineering</h5>
+                                        <button class="btn btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#pdfModal" data-pdf="assets\Certificados\Data_Engineering.pdf">
+                                            <i class="bi bi-eye-fill"></i> Ver certificado
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="card shadow-sm rounded-4 p-3 h-100 text-center">
+                                        <i class="bi bi-laptop-fill fs-1 text-secondary mb-2"></i>
+                                        <h5 class="fw-bold">Ética en Investigación que involucra humanos and CRI - F1</h5>
+                                        <button class="btn btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#pdfModal" data-pdf="assets\Certificados\F1_Marelly_Colla.pdf">
+                                            <i class="bi bi-eye-fill"></i> Ver certificado
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="card shadow-sm rounded-4 p-3 h-100 text-center">
+                                        <i class="bi bi-laptop-fill fs-1 text-secondary mb-2"></i>
+                                        <h5 class="fw-bold">Conducta Responsable en Investigación - F3</h5>
+                                        <button class="btn btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#pdfModal" data-pdf="assets\Certificados\F3_Marelly_Colla.pdf">
+                                            <i class="bi bi-eye-fill"></i> Ver certificado
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
+
+            <section class="py-5 d-flex justify-content-center" id="skills">
+                <!-- Soft Skills Card -->
+                <div class="card border-0 rounded-4 mb-5" style="max-width: 900px; width: 100%;">
+                    <div class="card-body p-5">
+                        <div class="mb-5 text-center">
+                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3 mb-3"><i class="bi bi-people-fill"></i></div>
+                            <h3 class="fw-bolder mb-3"><span class="text-gradient d-inline">Habilidades Interpersonales</span></h3>
+                            <p class="text-muted">Reflexiones sobre las habilidades blandas que he fortalecido y cómo las aplico en mi vida académica y personal.</p>
+                        </div>
+
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                            <div class="col">
+                                <div class="d-flex align-items-start bg-light rounded-4 p-4 h-100">
+                                    <div>
+                                        <h5 class="fw-bold">Trabajo en equipo</h5>
+                                        <p class="mb-0">
+                                            Durante el desarrollo de la <strong>Plataforma Web de Reservas de Hoteles y Tours</strong>, coordiné tareas con el equipo
+                                            de frontend y backend usando Git y metodologías ágiles. Esta experiencia consolidó mi habilidad para colaborar,
+                                            dividir responsabilidades y cumplir entregables en equipo.                                        
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="d-flex align-items-start bg-light rounded-4 p-4 h-100">
+                                    <div>
+                                        <h5 class="fw-bold">Comunicación efectiva</h5>
+                                        <p class="mb-0">
+                                            En el proyecto <strong>DataInsight CSMC</strong>, desarrollé un dashboard para un centro de salud mental, donde tuve que
+                                            entender las necesidades del cliente y traducirlas en indicadores visuales claros. Esto fortaleció mi capacidad de
+                                            comunicar ideas técnicas de forma efectiva a personas sin formación técnica.                                        
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="d-flex align-items-start bg-light rounded-4 p-4 h-100">
+                                    <div>
+                                        <h5 class="fw-bold">Adaptabilidad y aprendizaje rápido</h5>
+                                        <p class="mb-0">
+                                            Todos los proyectos que he desarrollado han implicado tecnologías nuevas para mí. He tenido que aprender rápidamente durante el proceso cada herramienta y lenguaje para poder completar los entregables, demostrando mi capacidad de adaptarme y adquirir conocimientos bajo presión.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="d-flex align-items-start bg-light rounded-4 p-4 h-100">
+                                    <div>
+                                        <h5 class="fw-bold">Creatividad y resolución de problemas</h5>
+                                        <p class="mb-0">
+                                            En el proyecto <strong>NovaInfor</strong>, inicialmente queríamos implementar el chatbot en WhatsApp, pero nos encontramos con restricciones en la API. Buscamos otras alternativas y logramos implementar exitosamente el chatbot en Telegram, asegurando la funcionalidad del proyecto.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="recognitions" class="py-5">
+                <div class="container px-5">
+                    <h3 class="fw-bolder text-center mb-5"><span class="text-gradient d-inline">Reconocimientos Adicionales</span></h3>
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                        <!-- DATATHON -->
+                        <div class="col">
+                            <div class="card h-100 shadow-sm rounded-4 border-0 p-3 text-center">
+                                <div class="mb-3">
+                                    <i class="bi bi-bar-chart-line-fill fs-2 text-primary"></i>
+                                </div>
+                                <h5 class="fw-bold">DATATHON: IA y Datos Abiertos SIS 2024</h5>
+                                <p class="text-muted small">Participación en evento de análisis de datos en salud</p>
+                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#pdfModal" data-pdf="assets/ConstanciaDataton.pdf">
+                                    <i class="bi bi-eye"></i> Ver certificado
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- NextGen Hackathon -->
+                        <div class="col">
+                            <div class="card h-100 shadow-sm rounded-4 border-0 p-3 text-center">
+                                <div class="mb-3">
+                                    <i class="bi bi-lightning-fill fs-2 text-warning"></i>
+                                </div>
+                                <h5 class="fw-bold">I Wie NextGen Innovators Hackathon 2025</h5>
+                                <p class="text-muted small">Hackathon colaborativo de innovación tecnológica</p>
+                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#pdfModal" data-pdf="assets\HackatonWIE.pdf">
+                                    <i class="bi bi-eye"></i> Ver certificado
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Alura G9 -->
+                        <div class="col">
+                            <div class="card h-100 shadow-sm rounded-4 border-0 p-3 text-center">
+                                <div class="mb-3">
+                                    <i class="bi bi-code-slash fs-2 text-success"></i>
+                                </div>
+                                <h5 class="fw-bold">Alura G9 2025</h5>
+                                <p class="text-muted small">Certificados de Programación principiante y Desarrollo personal</p>
+                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#pdfModal" data-pdf="assets\Alura_DP_completed.pdf">
+                                    <i class="bi bi-eye"></i> Ver certificado
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- RISE MICCAI -->
+                        <div class="col">
+                            <div class="card h-100 shadow-sm rounded-4 border-0 p-3 text-center">
+                                <div class="mb-3">
+                                    <i class="bi bi-mortarboard-fill fs-2 text-info"></i>
+                                </div>
+                                <h5 class="fw-bold">RISE MICCAI 2025 Summer School</h5>
+                                <p class="text-muted small">Escuela de verano en tecnologías médicas y análisis de imágenes</p>
+                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#pdfModal" data-pdf="assets/RISE.pdf">
+                                    <i class="bi bi-eye"></i> Ver certificado
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- IEEE EMBS Summer/Winter Camp -->
+                        <div class="col">
+                            <div class="card h-100 shadow-sm rounded-4 border-0 p-3 text-center">
+                                <div class="mb-3">
+                                    <i class="bi bi-gear-fill fs-2 text-danger"></i>
+                                </div>
+                                <h5 class="fw-bold">IEEE EMBS Summer/Winter Camp 2024</h5>
+                                <p class="text-muted small">Integración de IA generativa en innovaciones en salud</p>
+                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#pdfModal" data-pdf="assets\Certificate_of_Attendance_SWC.pdf">
+                                    <i class="bi bi-eye"></i> Ver certificado
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Certificado de inglés B2 -->
+                        <div class="col">
+                            <div class="card h-100 shadow-sm rounded-4 border-0 p-3 text-center">
+                                <div class="mb-3">
+                                    <i class="bi bi-globe fs-2 text-secondary"></i>
+                                </div>
+                                <h5 class="fw-bold">FCE Inglés B2</h5>
+                                <p class="text-muted small">Certificación de competencia en inglés</p>
+                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#pdfModal" data-pdf="assets/FCE.pdf">
+                                    <i class="bi bi-eye"></i> Ver certificado
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Bachillerato Internacional -->
+                        <div class="col">
+                            <div class="card h-100 shadow-sm rounded-4 border-0 p-3 text-center">
+                                <div class="mb-3">
+                                    <i class="bi bi-award-fill fs-2 text-warning"></i>
+                                </div>
+                                <h5 class="fw-bold">Bachillerato Internacional</h5>
+                                <p class="text-muted small">Certificado de finalización del programa de estudios</p>
+                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#pdfModal" data-pdf="assets\Diploma oficial de bachillerato.jpg">
+                                    <i class="bi bi-eye"></i> Ver certificado
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- Modal -->
+            <div class="modal fade" id="pdfModal" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="pdfModalLabel">Certificado</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe src="" style="width:100%; height:80vh;" frameborder="0" id="pdfFrame"></iframe>
+                </div>
+                </div>
+            </div>
+            </div>
+            <script>
+                const pdfModal = document.getElementById('pdfModal')
+                pdfModal.addEventListener('show.bs.modal', event => {
+                const button = event.relatedTarget
+                const pdfUrl = button.getAttribute('data-pdf')
+                const iframe = document.getElementById('pdfFrame')
+                iframe.src = pdfUrl
+                })
+            </script>
+
         </main>
         <!-- Footer-->
-        <footer class="bg-white py-4 mt-auto">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">Copyright &copy; Mi Portafolio 2023</div></div>
-                    <div class="col-auto">
-                        <a class="small" href="#!">Privacidad</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="#!">Terminos y condiciones</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="#!">Contacto</a>
+        <!-- Contact Footer -->
+        <footer class="bg-white py-5 mt-auto">
+            <div class="container px-4" id="contact">
+                <div class="row justify-content-between align-items-start">
+
+                    <!-- Texto y redes -->
+                    <div class="col-md-5 mb-4 mb-md-0">
+                        <h4 class="fw-bold">Contáctame</h4>
+                        <p class="small text-muted mb-3">
+                            Si tienes una propuesta, colaboración o quieres saber más sobre mi trabajo, puedes rellenar el formulario o contactarme a través de estos medios:
+                        </p>
+
+                        <div class="d-flex gap-3">
+                            <a href="https://github.com/MassielCC" class="text-dark fs-5" aria-label="GitHub" target="_blank"><i class="bi bi-github"></i></a>
+                            <a href="https://www.linkedin.com/in/marelly-massiel-colla-cervantes-565b881b7/" class="text-dark fs-5" aria-label="LinkedIn" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            <a href="mailto:marelly.colla@upch.pe" class="text-dark fs-5" aria-label="Email" target="_blank"><i class="bi bi-envelope-fill"></i></a>
+                        </div>
                     </div>
+
+                    <!-- Formulario de contacto -->
+                    <div class="col-md-6">
+                        <form>
+                            <div class="mb-3">
+                                <label for="emailInput" class="form-label small fw-bold">Tu correo</label>
+                                <input type="email" class="form-control" id="emailInput" placeholder="nombre@email.com" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="msgInput" class="form-label small fw-bold">Mensaje</label>
+                                <textarea class="form-control" id="msgInput" rows="3" placeholder="Escribe tu mensaje..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-dark px-4">Enviar</button>
+                        </form>
+                    </div>
+
+                </div>
+
+                <div class="text-center mt-4">
+                    <div class="small text-muted">© 2025 — Todos los derechos reservados</div>
                 </div>
             </div>
         </footer>
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
